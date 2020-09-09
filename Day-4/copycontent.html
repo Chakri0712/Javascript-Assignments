@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text copying</title>
+</head>
+<style> 
+    body
+    {
+        font-size: 30px;
+    }
+    .text
+    {
+       margin: 10px;
+    }
+    #text1 , #text2
+    {
+        padding: 15px;
+    }
+    button{
+        padding: 5px;
+        align-self: center;
+    }
+</style>
+<body>
+<div>
+    <label for="text1">text1:</label>
+    <input type="text" id="text1" placeholder="type some text" class="text">
+</div>
+<div class="button">
+    <label for="text2">text2:</label>
+    <input type="text" id="text2" placeholder="text" class="text">
+</div>
+<div>
+    <button onclick="clickbutton()">click here</button>
+</div>
+    <script src="copycontent.js"></script>
+</body>
+</html>
