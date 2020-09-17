@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>persons' Data</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        background-color: blanchedalmond;
+    }
+
+    .data{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 50%;
+        width: 70%;
+        margin-left: 10%;
+        margin-top: 50px;
+        padding: 25px;       
+    }
+    
+    h1{
+        text-align: center;
+        padding: 20px;
+        margin: 20px;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+    table{
+        width: 100%;
+        margin-top: 25px;
+        
+    }
+    th ,td {
+        height: 40px;
+        text-align: center;
+        padding: 10px;
+    }
+    button{
+        padding: 10px;
+        margin-top: 15px;
+    }
+    input{
+        padding: 10px;
+        margin-bottom: 10px;
+
+    }
+    .container{
+        background-color: chartreuse;
+    }
+    
+</style>
+<body>
+<div class="data">
+        <h1>Persons' Data</h1>
+        <div class="form">
+            <label for="">Name:</label>
+            <input 
+            type="text" 
+            id="searchbyname" 
+            placeholder="search name" 
+            onkeydown="searchByName()">
+            <div class="form">
+            <label for="">City:</label>
+            <input 
+            type="text" 
+            id="searchbycity" 
+            placeholder="search city" 
+            onkeydown="searchBycity()">
+        </div>
+        </div>
+        <table border="1" class="table">
+            <thead>
+                <tr>
+                    <th>sno</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>city</th>
+                    <th>salary</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="tdata">
+            </tbody>
+        </table>
+</div>
+
+ <script src="project1.js"></script>
+
+    
+</body>
+</html>
