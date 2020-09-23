@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .header {
+      height: 70px;
+      width: 100%;
+      background-color: lightgrey;
+      line-height: 70px;
+    }
+
+    h1 {
+      margin-left: 5%;
+      display: inline-block;
+      width: 30%;
+      vertical-align: top;
+    }
+
+    .search {
+      height: 70px;
+      width: 60%;
+      /* background-color: red; */
+      display: inline-block;
+    }
+
+    .search input {
+      height: 40px;
+      width: 100%;
+      text-indent: 20px;
+      border-radius: 5px;
+      border: 1px solid gray;
+      outline: none;
+    }
+
+    .products {
+      width: 100%;
+      height: auto;
+      /* background-color: gray; */
+    }
+
+    .productwrapper {
+      height: auto;
+      width: 80%;
+      /* background-color: green; */
+      margin-left: 10%;
+      margin-bottom: 50px;
+    }
+
+    .product {
+      height: auto;
+      width: 25%;
+      /* background-color: red; */
+      display: inline-block;
+      margin-top: 25px;
+      margin-left: 6.25%;
+      border: 1px solid lightgray;
+    }
+
+    .prodimg {
+      height: 300px;
+      width: 100%;
+      /* background-color: yellow; */
+      overflow: hidden;
+    }
+
+    .product h3,
+    .product p {
+      padding: 5px;
+      padding-left: 10px;
+    }
+
+    .product p {
+      color: gray;
+    }
+    button {
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <div class="header">
+        <h1>Shopping 360</h1>
+        <div class="search">
+          <input
+            type="search"
+            onkeyup="searchProduct(this.value)"
+            placeholder="Search For Products"
+          />
+        </div>
+      </div>
+      <!-- Section: Filters -->
+    <section class="m-3">
+      <h3>Price Filter:</h3>
+        <form onsubmit="filterbyPrice(event)">
+          <div>
+              <label for="from"> <b>Min:</b></label>
+              <input id="from" type="number" class="form-control" style="padding: 10px;margin: 5px;">
+              <label for="to"><b> Max:</b> </label>
+              <input id="to" type="number" class="form-control"  style="padding: 10px;margin: 5px;">
+              <button type="submit">Filter</button>
+          </div>
+        </form>
+      </section>
+      <div class="products">
+        <div class="productwrapper" id="productwrapper">
+        </div>
+      </div>
+      
+      <div class="products">
+        <h1>Cart</h1>
+        <label for="count">Items:</label>
+          <input type="number" id="count" value= "0" placeholder="total items" style="padding: 10px;margin: 10px;">
+        <div class="productwrapper" id="cart">
+          
+        </div>
+      </div>
+    <script src="shoppingproject.js"></script>
+  </body>
+</html>
+
+
+
+
+
